@@ -1,0 +1,190 @@
+:root {
+  --primaryBgColor: rgb(255, 187, 101);
+  --primaryBgGradient: linear-gradient(
+    90deg,
+    rgba(255, 187, 101, 1) 0%,
+    rgba(230, 75, 192, 1) 100%
+  );
+  --pageMarginX: 0 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.textColor {
+  color: white;
+}
+
+.textColor a {
+  color: white;
+}
+
+header {
+  background: var(--primaryBgGradient);
+}
+
+.mainHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 65px;
+  margin: var(--pageMarginX);
+}
+
+.vl {
+  border-left: 2px solid white;
+  height: 100%;
+}
+
+.socialLinkContainer {
+  flex-basis: 40%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 1.2rem;
+
+  height: 100%;
+}
+
+.socialLink {
+  padding: 0 15px;
+}
+
+.contactDetails {
+  flex-basis: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 1.1rem;
+  height: 30px;
+}
+
+.contactDetails span {
+  margin: 0 10px;
+}
+
+.consultBtn {
+  font-size: 15px;
+
+  background: transparent;
+  border: 2px solid white;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.consultBtn:hover {
+  opacity: 0.6;
+}
+
+/* NAV Section */
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 65px;
+
+  margin: var(--pageMarginX);
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+}
+
+.faGrad {
+  font-size: 3rem;
+  background: var(--primaryBgGradient);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navLogo a {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+
+  margin-left: 20px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+
+  font-size: 20px;
+
+  height: 100%;
+}
+
+.navBar a {
+  margin: 0 10px;
+
+  color: black;
+  text-decoration: none;
+}
+
+.navBar a:last-child {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 10px;
+
+  background-color: orange;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+
+  padding: 0 10px;
+
+  background-color: black;
+  color: white;
+}
+
+/* Hero Section */
+
+.heroImgContainer {
+  background-image: url("/images/hero-img.jpg");
+  height: 833px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroImgOverlay {
+  height: 833px;
+  background-color: black;
+  opacity: 60%;
+}
+
+.sectionHeadings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
