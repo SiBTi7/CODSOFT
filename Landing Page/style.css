@@ -48,7 +48,7 @@ header {
 }
 
 .socialLinkContainer {
-  flex-basis: 40%;
+  flex-basis: 35%;
 
   display: flex;
   align-items: center;
@@ -63,13 +63,13 @@ header {
 }
 
 .contactDetails {
-  flex-basis: 30%;
+  flex-basis: 35%;
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  font-size: 1.1rem;
+  font-size: 1rem;
   height: 30px;
 }
 
@@ -165,7 +165,7 @@ header {
 /* Hero Section */
 
 .heroImgContainer {
-  background-image: url("/images/hero-img.jpg");
+  background-image: url("./images/hero-img.jpg");
   height: 833px;
 
   background-repeat: no-repeat;
@@ -179,12 +179,75 @@ header {
   opacity: 60%;
 }
 
-.sectionHeadings {
+.heroTextContainer {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  /* transform: translate(-50%, -50%); */
+  text-align: left;
+
+  margin: var(--pageMarginX);
+
   color: white;
-  z-index: 2;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 300px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 30px;
+  padding-right: 200px;
+}
+
+.heroContent .vl {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 187, 101, 1),
+      rgba(230, 75, 192, 1)
+    )
+    1 100;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: 20px;
+  letter-spacing: 3px;
+
+  margin: 0px;
+}
+
+.heroText p {
+  margin-top: 10px;
+}
+
+.readMore {
+  margin-top: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  background: var(--primaryBgGradient);
+}
+
+.requestBtn {
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  margin-left: 15px;
+
+  border: 2px white solid;
+  background: transparent;
 }
