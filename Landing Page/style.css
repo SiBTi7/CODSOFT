@@ -13,6 +13,13 @@ body {
   padding: 0;
   display: block;
   box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.pageWidth {
+  width: 80%;
+  margin: 0 auto;
 }
 
 button {
@@ -39,7 +46,6 @@ header {
   justify-content: space-between;
 
   height: 65px;
-  margin: var(--pageMarginX);
 }
 
 .vl {
@@ -48,7 +54,7 @@ header {
 }
 
 .socialLinkContainer {
-  flex-basis: 35%;
+  flex-basis: 41%;
 
   display: flex;
   align-items: center;
@@ -63,13 +69,13 @@ header {
 }
 
 .contactDetails {
-  flex-basis: 35%;
+  flex-basis: 30%;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  font-size: 1rem;
+  font-size: 1.1rem;
   height: 30px;
 }
 
@@ -79,6 +85,7 @@ header {
 
 .consultBtn {
   font-size: 15px;
+  font-weight: bold;
 
   background: transparent;
   border: 2px solid white;
@@ -98,8 +105,6 @@ header {
   justify-content: space-between;
 
   height: 65px;
-
-  margin: var(--pageMarginX);
 }
 
 .navLogo {
@@ -134,7 +139,7 @@ header {
 }
 
 .navBar a {
-  margin: 0 10px;
+  margin: 0 15px;
 
   color: black;
   text-decoration: none;
@@ -174,7 +179,7 @@ header {
 }
 
 .heroImgOverlay {
-  height: 833px;
+  height: 100%;
   background-color: black;
   opacity: 60%;
 }
@@ -182,10 +187,11 @@ header {
 .heroTextContainer {
   position: absolute;
   top: 50%;
-  /* transform: translate(-50%, -50%); */
+  left: 10%;
+
   text-align: left;
 
-  margin: var(--pageMarginX);
+  width: 80%;
 
   color: white;
 }
@@ -195,7 +201,7 @@ header {
   align-items: center;
 
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 .heroText {
@@ -218,14 +224,16 @@ header {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: 3px;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 h6 {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
 
   margin: 0px;
 }
@@ -240,6 +248,7 @@ h6 {
   letter-spacing: 2px;
 
   background: var(--primaryBgGradient);
+  border: none;
 }
 
 .requestBtn {
@@ -250,4 +259,184 @@ h6 {
 
   border: 2px white solid;
   background: transparent;
+}
+
+.sectionIcon {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1rem;
+}
+
+.sectionIcon i {
+  padding: 5px 0;
+}
+
+.sectionIcon :nth-child(2) {
+  background: var(--primaryBgGradient);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Service Section */
+
+.serviceSection {
+  height: 250px;
+
+  background: var(--primaryBgGradient);
+}
+
+.serviceCardContainer {
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex-basis: 25%;
+  color: white;
+}
+
+.card span {
+  font-size: 1.2rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+}
+
+.cardHeading {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card p {
+  margin-top: -5px;
+}
+
+/* About Section */
+
+section {
+  position: relative;
+}
+
+.aboutSection,
+.ourServicesSection {
+  background-image: url("./images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 700px;
+
+  opacity: 5%;
+}
+
+.aboutSectionContainer {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  text-align: left;
+
+  width: 80%;
+
+  display: flex;
+}
+
+.aboutSectionContent {
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-right: 10px;
+}
+
+.aboutUs {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.aboutSectionContent hr {
+  margin-top: 0;
+  margin-left: 0;
+
+  width: 130px;
+
+  border: 3px;
+  height: 4px;
+  background-image: var(--primaryBgGradient);
+}
+
+.tagline {
+  font-size: x-large;
+
+  word-spacing: 2px;
+  width: 75%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.aboutSectionContent p {
+  font-size: x-large;
+  line-height: 35px;
+
+  color: gray;
+
+  margin-top: 10px;
+}
+
+.aboutSectionBtn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  background: var(--primaryBgGradient);
+  border: none;
+
+  margin-top: 15px;
+}
+
+.aboutImg {
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 187, 101, 1),
+      rgba(230, 75, 192, 1)
+    )
+    1 100;
+
+  width: 98%;
+  height: 100px;
+
+  position: absolute;
+  bottom: 0%;
+
+  z-index: -1;
+}
+
+.aboutImgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  position: relative;
+}
+
+.aboutImg img {
+  width: 500px;
+  margin-right: 0;
 }
