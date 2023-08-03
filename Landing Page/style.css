@@ -186,7 +186,7 @@ header {
 
 .heroTextContainer {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 10%;
 
   text-align: left;
@@ -439,4 +439,85 @@ section {
 .aboutImg img {
   width: 500px;
   margin-right: 0;
+}
+
+/* Our Services Section  */
+
+.ourServicesContainer {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  text-align: left;
+
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.ourServicesContent {
+  margin-bottom: 15px;
+}
+
+.ourServicesContent hr {
+  margin-top: 0;
+  margin-left: 0;
+
+  width: 130px;
+
+  border: 3px;
+  height: 4px;
+  background-image: var(--primaryBgGradient);
+}
+
+.ourServiceTab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  position: relative;
+
+  display: flex;
+  justify-content: end;
+}
+
+.tab img {
+  width: 450px;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.tabIcon {
+  color: white;
+  background: var(--primaryBgGradient);
+  font-size: 1.2rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.tabContent {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  bottom: -10%;
+
+  width: 75%;
+
+  background: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.tabTitle {
+  font-size: 1.1rem;
 }
