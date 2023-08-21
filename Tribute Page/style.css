@@ -1,4 +1,131 @@
 body {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
+}
+
+header {
+  background: black;
+  padding: 50px 100px;
+  height: 550px;
+}
+
+.main-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 15px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 18px;
+}
+
+p {
+  color: #989898;
+  margin: 0px;
+
+  font-family: "Crimson Text", serif;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 6px;
+}
+
+.date {
+  color: white;
+  margin: 0;
+
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 4px;
+}
+
+.divider {
+  width: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid #d78e38;
+}
+
+.main-img {
+  color: white;
+  position: relative;
+
+  height: 500px;
+}
+
+.main-img img {
+  position: absolute;
+  height: 700px;
+  width: auto;
+
+  translate: -75% -15%;
+
+  opacity: 60%;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-h1 {
+  color: black;
+
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 45px;
+}
+
+.intro-p {
+  color: black;
+  letter-spacing: 0;
+
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  line-height: 180%;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.intro-txt {
+  width: 35%;
+}
+
+.intro-txt a {
+  text-decoration: none;
+}
+
+.quote {
+  width: 35%;
 }
